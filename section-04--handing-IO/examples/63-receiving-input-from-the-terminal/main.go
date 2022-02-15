@@ -36,4 +36,18 @@ func main() {
 	}
 
 	fmt.Println("My number is", num)
+
+	// read float
+	line, err = r.ReadString('\n')
+	if err != nil {
+		panic(err)
+	}
+
+	floatNum, err := strconv.ParseFloat(strings.TrimSpace(line), 64)
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println("This is float: ", floatNum)
+
 }
