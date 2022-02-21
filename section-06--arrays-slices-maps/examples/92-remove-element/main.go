@@ -12,5 +12,6 @@ func main() {
 	// write Lucy to idx 2 original slice
 	// zombies = [Paul Katya Lucy Lucy] result = [Paul Katya Lucy]
 	// более безопасно присваивать оригинальному слайсу
+	// иначе оригинальный слайс будет неожиданным
 	fmt.Println(zombies, result)
 }
